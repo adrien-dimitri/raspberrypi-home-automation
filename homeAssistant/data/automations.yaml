@@ -1,0 +1,25 @@
+- id: '1703183836741'
+  alias: temperature_check
+  description: ''
+  trigger:
+  - platform: numeric_state
+    entity_id:
+    - sensor.dht_sensor_temperature
+    above: 24
+  - platform: numeric_state
+    entity_id:
+    - sensor.dht_sensor_temperature
+    below: 19
+  condition:
+  - condition: or
+    conditions: []
+  action:
+  - service: notify.mobile_app_sm_n950f
+    data:
+      message: "{%if int(states('sensor.dht_sensor_temperature')) > 24 %} \n  Open
+        the windows\n{% elif int(states('sensor.dht_sensor_temperature')) < 19 %}
+        \n  Close the windows\n{%else%}\n  Abnormal\n{% endif %}\n"
+      title: "{%if int(states('sensor.dht_sensor_temperature')) > 24 %} \n  High\n{%
+        elif int(states('sensor.dht_sensor_temperature')) < 19 %} \n  Low\n{%else%}\n
+        \ Abnormal\n{% endif %}  temperature warning!\n"
+  mode: single

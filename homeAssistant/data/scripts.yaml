@@ -1,0 +1,6 @@
+open_graph_dashboard:
+  alias: Open Graph Dashboard
+  sequence:
+    - service: browser_mod.navigate
+      data:
+        navigation_path: "dashboard-graphs/0"

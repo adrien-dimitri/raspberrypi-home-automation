@@ -1,0 +1,17 @@
+logs/
+tmp/
+.env
+.prometheus_grafana.env
+.grafana.env
+
+# db
+homeAssistant/data/.storage
+homeAssistant/data/configuration.yaml.save
+homeAssistant/data/home-assistant.log.1
+homeAssistant/data/home-assistant.log.fault
+homeAssistant/data/home-assistant_v2.db
+homeAssistant/data/home-assistant.log
+homeAssistant/data/home-assistant_v2.db-shm
+homeAssistant/data/home-assistant_v2.db-wal
+pihole/etc-pihole/
+pihole/etc-dnsmasq.d/

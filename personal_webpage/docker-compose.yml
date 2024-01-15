@@ -1,0 +1,10 @@
+version: "3"
+services:
+  website:
+    image: nginx:latest
+    container_name: website
+    volumes:
+      - /home/raspberry/docker/personal_webpage/html:/usr/share/nginx/html
+    restart: always
+    ports:
+      - "8081:80"

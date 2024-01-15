@@ -1,0 +1,12 @@
+global:
+  scrape_interval:     15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: 'homeassistant'
+    metrics_path: /api/prometheus
+    static_configs:
+      - targets: ['192.168.2.57:8123']
+    scheme: http
+    authorization:
+      credentials: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhMWZlYjVmNGM1ZjM0ZDQyOTQ0ZTQ2ZGM1MDZjMGExMCIsImlhdCI6MTcwMzM2MjM5NiwiZXhwIjoyMDE4NzIyMzk2fQ.Ne1srDyeUU64j-IOaiEtmY0nO-CTNso7fFMLFRU-vyk"

@@ -1,0 +1,3 @@
+[submodule "personal_webpage"]
+	path = personal_webpage
+	url = https://github.com/adrien-dimitri/local-website-hub.git

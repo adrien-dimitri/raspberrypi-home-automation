@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Website Hub</title>
+
+</head>
+<body>
+    <h1>Local Website Hub</h1>
+    <div class="wrapper"></div>
+    <input type="checkbox"  id="btnControl"/>
+    <label class="btn" for="btnControl">⚙️</label>
+    <div class="ip-address-container" id="ipAddressContainer">
+        <label for="ipAddress">Enter IP Address:</label>
+        <input type="text" id="ipAddress" placeholder="e.g., 192.168.2.57">
+        <button id="updateButton" onclick="updateIPAddress()">Update IP Address</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
