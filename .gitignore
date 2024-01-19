@@ -4,6 +4,19 @@ tmp/
 .prometheus_grafana.env
 .grafana.env
 
+# vscode
+.vscode/
+
+# Compiled Python files
+*.pyc
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc
+
 # db
 homeAssistant/data/.storage
 homeAssistant/data/configuration.yaml.save
