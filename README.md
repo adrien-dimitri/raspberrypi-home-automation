@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+> This project has been discontinued and is no longer maintained. I have transitioned to a new project focused on self-hosted services on the Raspberry Pi. </br>
+> If you are interested, you can check out the new project [here](https://github.com/adrien-dimitri/selfhosted-services).
+
+
 # Raspberry PI Home Automation
 
 <p align="center">
